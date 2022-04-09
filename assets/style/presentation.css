@@ -1,0 +1,83 @@
+/* VERSION DESKTOP */
+.texte-presentation{
+    width: 20%;
+    position: absolute;
+    top: 22%;
+    left: 41%;
+    text-align: center;
+}
+.texte-presentation h2{
+    padding: 1rem;
+    color: #4d698c;
+}
+.texte-presentation p{
+    color: white;
+}
+main{
+    background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+    overflow: hidden;
+}
+#page-presentation{
+    display: flex;
+    justify-content: center;
+}
+#page-presentation img{
+    width: 53%;
+}
+.animation-presentation{
+    animation-duration: 1.5s;
+    animation-name: slideinpresentation;
+    animation-iteration-count: 1;
+}
+@keyframes slideinpresentation {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+/*MEDIAQUERIE*/
+/* VERSION MOBILE */
+@media screen and (min-width: 320px) and (max-width: 750px){
+    main{
+        background-color: #edeff0;
+    }
+    .parcours{
+        display: inline;
+    }
+    .container h1, .container span{
+        color: white;
+    }
+    .illustration{
+        text-align: center;
+    }
+    .illustration img{
+        width: 60%;
+        margin-top: 2rem;
+    }
+    #submit{
+        padding: 15px 20px;
+    }
+    .form-contact{
+        width: 60%;
+    } 
+    .texte{
+       
+        width: 100%;
+    }
+    .form-contact{
+        font-size: 1.8rem;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 3px;
+        width: 90%;
+    }
+    .contact img{
+        width: 40px;
+    }
+}

@@ -1,0 +1,400 @@
+/* VERSION DESKTOP */
+.container span,
+.container h1{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+    font-family: "vogue", serif;
+    margin-top: 2rem;
+}
+.texte1{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    position: relative;
+    animation: text 3.5s 1;
+}
+.texte2{
+    font-size: 25px;
+    font-weight: bold;
+}
+@keyframes text{
+    0%{
+        color: #c2c6b7;
+        margin-bottom: -20px;
+    }
+    30%{
+        letter-spacing: 20px;
+        margin-bottom: -20px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -20px;
+    }
+}
+.image_accueil{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.git{
+    text-align: center;
+    margin: 2rem;
+}
+.git span{
+    padding: 2rem;
+}
+.git img{
+    width: 5%;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.git img:hover{
+    width: 5%;
+    transform: scale(1.5);
+    filter: invert(61%) sepia(95%) saturate(3168%) hue-rotate(234deg) brightness(99%) contrast(95%);
+    transition: all 1s;
+}
+.parcours, .gestion_projets{
+    display: flex;
+    justify-content: space-around;
+    background-color:#edeff0;
+}
+.illustration img{
+    margin-top:0;
+}
+.site, .learnHome{
+    width: 50%;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.site h3{
+    border-bottom: 2px solid black;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site h3:hover, .titre_site-df h3:hover, .learnHome h3:hover{
+    border-bottom: 2px solid #e1bee1;
+    width: 70%;
+    transition: all 1s;
+}
+.site-df{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.site-df a{
+    width: 50%;
+    margin-bottom: 3rem;
+}
+.site-df img{
+    width: 90%;
+    height: 40vh;
+    box-shadow: 5px 0px 15px grey;
+}
+.titre_site-df h3{
+    border-bottom: 2px solid black;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titre_site-df{
+    width: 100%;
+}
+.site img, .learnHome img{
+    width: 90%;
+    height: 40vh;
+    box-shadow: 5px 0px 15px grey;
+}
+.disney_projet{
+    display: flex;
+    text-align: center;
+}
+.disney_projet img{
+    width: 50%;
+    box-shadow: 5px 0px 15px grey;
+}
+.gestion_titre h3{
+    border-bottom: 2px solid black;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.learnHome h3{
+    border-bottom: 2px solid black;
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
+main{
+    background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+    overflow: hidden;
+}
+/* Animation écritures */
+.container-texte{
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 32%;
+}
+.container-texte-bis{
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 19%;
+}
+.t1{
+    white-space: nowrap;
+    font-size: 250px;
+    animation: scrollTxt 40s linear infinite;
+    color: white;
+}
+.t2{
+    white-space: nowrap;
+    font-size: 250px;
+    animation: scrollTxtBis 40s linear infinite;
+    color: wheat;
+}
+@keyframes scrollTxt {
+    from{
+        transform: translate(5%,0)
+    }
+    to{
+        transform: translate(-100%, 0);
+    }
+}
+@keyframes scrollTxtBis {
+    from{
+        transform: translate(-80%,0)
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+/* animation carousel projets */
+.container-projets, .vslide{
+    width: 100%;
+    height: 100vh;
+}
+.container-projets{
+    overflow: hidden;
+    background-color: transparent
+}
+.vmove{
+    position: relative;
+    bottom: 0;
+    animation: slidev linear 10s infinite;
+}
+.vmove:hover{
+    animation-play-state: paused;
+}
+@keyframes slidev {
+    0%{bottom: 0%}
+    30%{bottom: 0%}
+    33%{bottom: 100%}
+    63%{bottom: 100%}
+    66%{bottom: 200%}
+    97%{bottom: 200%}
+    100%{bottom: 0%}
+}
+.container-projets{
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    /* padding-top: 4rem; */
+    position: relative;
+    left: 47%;
+}
+.container-projets div{
+    position: relative;
+    margin: 5px 20px;
+    min-width: 228px;
+    max-width: 650px;
+    min-height: 249px;
+    width: 100%;
+    color: #ffffff;
+    text-align: right;
+    line-height: 1.4em;
+    background-color: #1a1a1a;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: 10rem 0rem 10rem 0rem;
+    background-color: transparent;
+}
+.snip1482 {
+    position: relative;
+    margin: 10px 20px;
+    min-width: 228px;
+    max-width: 650px;
+    min-height: 249px;
+    width: 100%;
+    color: #ffffff;
+    text-align: right;
+    line-height: 1.4em;
+    background-color: #1a1a1a;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: 10rem 0rem 10rem 0rem;
+}
+.snip1482 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1482 img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  border-radius: 10rem 0rem 10rem 0rem;
+}
+.snip1482 figcaption {
+  position: absolute;
+  width: 38%;
+  top: 185%;
+  left: 30px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.snip1482 h2,
+.snip1482 p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+.snip1482 h2 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #faecab;
+}
+.snip1482 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.snip1482:hover img,
+.snip1482.hover img {
+  width: 55%;
+  right: -10%;
+}
+.snip1482:hover figcaption h2,
+.snip1482.hover figcaption h2,
+.snip1482:hover figcaption p,
+.snip1482.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+/*MEDIAQUERIE*/
+/* VERSION TABLETTE */
+@media screen and (min-width: 701px) and (max-width: 770px){
+    .site img, .learnHome img{
+        height: 30vh;
+    }
+    .site-df img{
+        height: 30vh;
+    }
+}
+/*MEDIAQUERIE*/
+/* VERSION MOBILE */
+@media screen and (min-width: 320px) and (max-width: 700px){
+    main{
+        background-color: #edeff0;
+    }
+    .container h1{
+        color: white;
+    }
+    .container span{
+        color: white;
+    }
+    .parcours{
+        display: inline;
+    }
+    .illustration img{
+        width: 60%;
+        margin-left: 5rem;
+        margin-top: 2rem;
+    
+    }
+    .image_accueil{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/mes_projets.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .git img{
+        width: 15%;
+    }
+    .git img:hover{
+        width: 15%;
+        transform: scale(1.5);
+    }
+    .site, .learnHome{
+        text-align: center;
+        width: 100%;
+    }
+    .site h3, .learnHome h3{
+        margin-bottom: 0;
+        border: none;
+        width: 100%;
+    }
+    .site h3:hover, .learnHome h3:hover{
+        border: none;
+        transition: none;
+        width: 100%;
+    }
+    .site img, .learnHome img{
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 25vh;
+    }
+    .site-df{
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .titre_site-df h3{
+        margin-bottom: 0;
+        border: none;
+        width: 100%;
+    }
+    .titre_site-df h3:hover{
+        border: none;
+        transition: none;
+        width: 100%;
+    }
+    .site-df img{
+        margin-top: 4rem;
+        height: 25vh;
+    }
+    .disney_projet{
+        display: flex;
+        text-align: center;
+    }
+    .disney_projet img{
+        width: 90%;
+        margin-top: 4rem;
+    }
+}
+
