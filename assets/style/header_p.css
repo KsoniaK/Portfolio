@@ -1,0 +1,26 @@
+/* header présentation / projets */
+.navigation{
+    position: fixed;
+    top: 43%;
+    left: 2%;
+}
+.texte_navigation ul{
+    display: block;
+    list-style: none;
+    padding-left: 0;
+}
+.texte_navigation li{
+    padding: 1rem;
+}
+.texte_navigation a{
+    color: #faecab;
+    font-size: 17px;
+    margin-right: 17px;
+}
+.texte_navigation a:hover{
+    color: white;
+    text-decoration: none;
+}
+#navbar{
+    display: none;
+}
