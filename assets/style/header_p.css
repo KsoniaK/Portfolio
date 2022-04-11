@@ -13,6 +13,7 @@
     padding: 1rem;
 }
 .texte_navigation a{
+    text-decoration: none;
     color: #faecab;
     font-size: 17px;
     margin-right: 17px;
