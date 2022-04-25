@@ -222,7 +222,7 @@ main{
         left: 5px;
       }
     .vmove{
-        top: 15%;
+        top: 10%;
         /* animation-play-state: paused; */
     }
     .container-projets {
@@ -236,7 +236,7 @@ main{
         width: 100%;
         height: 80vh;
         position: absolute;
-        top: 17%;
+        top: 12%;
         overflow: hidden;
     }
     .container-texte {

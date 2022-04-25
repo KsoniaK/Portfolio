@@ -54,9 +54,13 @@
         /* left: 5%; */
     }
     .dropdown-menu{
-        background-color: #4d698c;
+        width: 100%;
+        background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
         border-radius: .5rem;
     }
+    /* .dropdown-menu:hover{
+        background-color: transparent;
+    } */
     .dropdown-item{
         color: white;
     }
