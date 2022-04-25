@@ -1,9 +1,51 @@
 /* desktop */
+/* reset */
+@font-face{
+    font-family: jost;
+    src: url(../fonts/jost/Jost-VariableFont_wght.ttf)
+}
+@font-face{
+    font-family: vogue;
+    src: url(../fonts/vogue/Vogue.ttf)
+}
+
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size:62.5%;
+    
+}
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: "jost", serif;
+}
 /* header */
 .image-presentation img{
     object-fit: none;
 }
-
+/* contact */
+.contact{
+    position: fixed;
+    text-align: end;
+    width: 3%;
+    z-index: 2;
+    border-radius: 0rem 0rem 13rem 13rem;
+    top: 45%;
+    right: 4%;
+}
+.contact img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: width 1.5s, height 1.5s, transform 1s;
+}
+.contact img:hover{
+    width: 80px;
+    height: 80px;
+    transform: rotate(360deg);
+}
 /* main */
 .container{
     text-align: center;
@@ -94,8 +136,32 @@ h3{
       width: 100%;
     }
 }
+/* copyright */
+.copyright p{
+    text-align: center;
+    color: black;
+}
+.copyright{
+    text-align: center;
+}
 
-/* MEDIAQUERIE */
+/* ancre */
+#arrow_up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 45px;
+    opacity: 0.3;  
+}
+#arrow_up img{
+    width: 50px;   
+}
+#arrow_up:hover{
+    opacity: 1;    
+}
+
+/* mediaquerie */
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 700px){
     /* reset*/
@@ -116,8 +182,6 @@ h3{
         justify-content: center;
         position: relative;
         width: 100%;
-        z-index: 2;
-        top: 0;
         right: 0;
     }
 
@@ -155,10 +219,14 @@ h3{
         display: flex;
     }
     .texte{
-        width: 85%;
+        width: 75%;
         padding: 2rem;
         box-shadow: none;
-        border-radius: none;
+        height: 7vh;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
     @keyframes text{
         0%{
@@ -176,5 +244,8 @@ h3{
     }
     .parcours{
         padding: 0;
+    }
+    #arrow_up{
+        display: none; 
     }
 }

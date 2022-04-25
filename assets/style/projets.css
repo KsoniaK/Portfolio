@@ -4,27 +4,27 @@ main{
     background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
     overflow: hidden;
 }
-/* Animation écritures */
+/* animation écritures */
 .container-texte{
     display: flex;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: absolute;
     transform: rotate(90deg);
-    right: 32%;
+    right: 25%;
 }
 .container-texte-bis{
     display: flex;
-    width: 80%;
+    width: 100%;
     overflow: hidden;
     position: absolute;
     transform: rotate(90deg);
-    right: 19%;
+    right: 12%;
 }
 .t1{
     white-space: nowrap;
     font-size: 250px;
-    animation: scrollTxt 40s linear infinite;
+    animation: scrollTxt 100s linear infinite;
     background:-webkit-linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
     background-clip:text;
     -webkit-background-clip:text;
@@ -33,7 +33,7 @@ main{
 .t2{
     white-space: nowrap;
     font-size: 250px;
-    animation: scrollTxtBis 40s linear infinite;
+    animation: scrollTxtBis 100s linear infinite;
     color: wheat;
 }
 @keyframes scrollTxt {
@@ -65,6 +65,7 @@ main{
     position: relative;
     bottom: 0;
     animation: slidev linear 10s infinite;
+    /* animation: slidev linear 10s paused; */
 }
 .vmove:hover{
     animation-play-state: paused;
@@ -83,6 +84,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 45%;
+    /* height: 93vh; */
     position: relative;
     left: 47%;
 }
@@ -116,6 +118,11 @@ main{
     font-size: 16px;
     overflow: hidden;
     border-radius: 10rem 0rem 10rem 0rem;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 .snip1482 * {
   -webkit-box-sizing: border-box;
@@ -128,16 +135,18 @@ main{
   right: 0%;
   top: 50%;
   opacity: 1;
-  width: 100%;
+  /* width: 100%; */
+  width: 147%;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   border-radius: 10rem 0rem 10rem 0rem;
 }
 .snip1482 figcaption {
   position: absolute;
-  width: 38%;
-  top: 185%;
-  left: 30px;
+  width: 50%;
+  height: 35vh;
+  top: 80%;
+  /* left: 33px; */
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   padding: 20px 0 20px 20px;
@@ -180,9 +189,64 @@ main{
 
 /* mediaquerie */
 /* mobile */
-@media screen and (min-width: 320px) and (max-width: 700px){
+@media screen and (min-width: 320px) and (max-width: 750px){
     main{
         background-color: #edeff0;
     }
+    .t1{
+        font-size: 30px;
+        animation: scrollTxt 40s linear infinite;
+    }
+    .t2{
+        font-size: 30px;
+        animation: scrollTxtBis 40s linear infinite;
+    }
+    .container-projets{
+        width: 100%;
+        position: initial;
+    }
+    .snip1482 {
+        margin: 10px 0px;
+        min-height: 136px;
+    }
+    /* .snip1482 img{
+        height: 23vh;
+    } */
+    .snip1482 p{
+        display: none;
+    }
+    .snip1482 figcaption {
+        width: 50%;
+        height: 15vh;
+        top: 74%;
+        left: 5px;
+      }
+    .vmove{
+        top: 15%;
+        /* animation-play-state: paused; */
+    }
+    .container-projets {
+        overflow: auto;
+    }
+    .container-projets div{
+        width: 70%;
+    }
+    .animation-texte{
+        background-color: transparent;
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        top: 17%;
+        overflow: hidden;
+    }
+    .container-texte {
+        right: 42%;
+        top: 33%;
+        overflow: initial;
+    }
+    .container-texte-bis {
+        right: 36%;
+        top: 33%;
+        overflow: initial;
+      }
 }
-

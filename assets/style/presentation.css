@@ -7,12 +7,11 @@ main{
 .texte-presentation{
     width: 20%;
     position: absolute;
-    top: 17%;
+    top: 23%;
     left: 41%;
     text-align: center;
 }
 .texte-presentation h2{
-    padding: 1rem;
     color: #4d698c;
 }
 .texte-presentation p{
@@ -21,6 +20,7 @@ main{
 #page-presentation{
     display: flex;
     justify-content: center;
+    height: 93vh;
 }
 #page-presentation img{
     width: 53%;
@@ -58,4 +58,18 @@ main{
         top: 0;
         right: 0;
     }
+    #page-presentation img{
+        display: none;
+    }
+    .texte-presentation{
+        border: 1px solid #4d698c;
+        padding: 3rem;
+        width: 85%;
+        position: absolute;
+        top: 22%;
+        left: 8%;
+    }
+    #page-presentation {
+        height: 96vh;
+      }
 }
