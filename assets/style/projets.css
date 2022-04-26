@@ -7,19 +7,19 @@ main{
 /* animation écritures */
 .container-texte{
     display: flex;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     position: absolute;
     transform: rotate(90deg);
-    right: 25%;
+    right: 36%;
 }
 .container-texte-bis{
     display: flex;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     position: absolute;
     transform: rotate(90deg);
-    right: 12%;
+    right: 23%;
 }
 .t1{
     white-space: nowrap;
@@ -240,12 +240,12 @@ main{
         overflow: hidden;
     }
     .container-texte {
-        right: 42%;
+        right: 51%;
         top: 33%;
         overflow: initial;
     }
     .container-texte-bis {
-        right: 36%;
+        right: 44%;
         top: 33%;
         overflow: initial;
       }

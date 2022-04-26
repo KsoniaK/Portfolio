@@ -64,6 +64,10 @@
     .dropdown-item{
         color: white;
     }
+    .dropdown-item:hover{
+    color : #ecb646;
+    background-color: transparent;
+    }
     .menu{
         width: 10%;
     }

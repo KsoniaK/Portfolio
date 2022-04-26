@@ -5,16 +5,11 @@ main{
     overflow: hidden;
 }
 .texte-presentation{
-    width: 34%;
+    width: 43%;
     position: absolute;
     top: 34%;
-    left: 32%;
+    left: 31%;
     text-align: center;
-    /* width: 35%;
-    position: absolute;
-    top: 31%;
-    left: 32%;
-    text-align: center; */
 
 }
 .texte-presentation h2{
@@ -24,23 +19,18 @@ main{
     color: white;
 }
 #page-presentation{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     height: 100vh;
 }
 #page-presentation img{
-    width: 43%;
-    height: 65vh;
+    width: 45%;
+    height: 67vh;
     position: absolute;
-    top: 20%;
-    left: 27%;
-    /* width: 55%;
-    height: 95vh;
-    position: absolute;
-    top: 11%;
-    left: 27%; */
+    top: 16%;
+    left: 30%;
 }
-.animation-presentation{
+.animation-presentation img{
     animation-duration: 1.5s;
     animation-name: slideinpresentation;
     animation-iteration-count: 1;
@@ -48,12 +38,12 @@ main{
 @keyframes slideinpresentation {
     from {
       margin-left: 100%;
-      width: 100%;
+      width: 45%;
     }
   
     to {
       margin-left: 0%;
-      width: 100%;
+      width: 45%;
     }
   }
 
@@ -77,7 +67,6 @@ main{
         display: none;
     }
     .texte-presentation{
-        /* border: 1px solid #4d698c; */
         padding: 3rem;
         width: 90%;
         position: absolute;
