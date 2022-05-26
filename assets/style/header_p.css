@@ -40,38 +40,34 @@
         width: 10%;
     }
     #navbar{
-        background-color: transparent !important;
-        position: absolute;
-        display: block;
+        z-index: 2;
+        /* background-color: transparent !important; */
+        background-color: #dda042!important;
+        /* position: absolute; */
+        display: flex;
         width: 100%;
         height: 6rem;
         list-style: none;
-        top: 3%;
-    }
-    .dropdown{
-        /* z-index: 2; */
-        /* top: 25%; */
-        /* left: 5%; */
+        top: 1%;
     }
     .dropdown-menu{
         width: 100%;
-        background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+        background-color: #dda042;
         border-radius: .5rem;
     }
-    /* .dropdown-menu:hover{
-        background-color: transparent;
-    } */
     .dropdown-item{
         color: white;
     }
     .dropdown-item:hover{
-    color : #ecb646;
-    background-color: transparent;
+        color : black;
+        background-color: transparent;
+        cursor: pointer;
     }
     .menu{
         width: 10%;
     }
     .nav-link {
+        /* position: relative; */
         padding-top: 1rem;
         justify-content: center;
         display: block;
@@ -81,14 +77,15 @@
         display: none;
     }
     .contact{
-        /* display: none; */
+        top: 0;
         padding: 1rem;
         display: flex;
-        justify-content: end;
-        position: absolute;
-        width: 85%;
-        right: 2%;
-        top: 3%;
+        justify-content: center;
+        position: initial;
+        /* position: absolute; */
+        /* width: 85%; */
+        /* right: 2%; */
+        /* top: 3%; */
     }
     .contact img {
         width: 40px;
