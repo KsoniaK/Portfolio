@@ -7,7 +7,7 @@ main{
 .texte-presentation{
     width: 43%;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 29%;
     text-align: center;
 }
@@ -17,7 +17,7 @@ main{
 #page-presentation{
     height: 96vh;
 }
-#page-presentation h2{
+.texte-presentation h2{
   color: #4d698c;
   padding: 2rem;
 }
@@ -58,7 +58,7 @@ main{
         padding: 3rem;
         width: 90%;
         position: absolute;
-        top: 40%;
+        top: 25%;
         left: 6%;
         animation-duration: 1.5s;
         animation-name: slideinpresentation;
@@ -74,7 +74,7 @@ main{
         }
       }
     #page-presentation {
-        height: 96vh;
+        /* height: 96vh; */
       }
       #page-presentation img{
         display: none;
