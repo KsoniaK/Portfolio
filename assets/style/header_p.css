@@ -77,9 +77,9 @@
         display: none;
     }
     .contact{
-        top: 0;
+        top: 50px;
         padding: 1rem;
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         position: initial;
         /* position: absolute; */
