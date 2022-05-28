@@ -205,9 +205,6 @@ h3{
     .container{
         top:50%
     }
-    .texte{
-        background: #f5deb3!important;
-    }
     h2{
         font-size: 1.6rem;
         color: #353f51;
@@ -235,6 +232,7 @@ h3{
         display: flex;
     }
     .texte{
+        background: #f5deb3;
         width: 75%;
         padding: 2rem;
         box-shadow: none;
