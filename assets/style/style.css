@@ -206,7 +206,7 @@ h3{
         top:50%
     }
     .texte{
-        background: #f5deb3;
+        background: #f5deb3!important;
     }
     h2{
         font-size: 1.6rem;
