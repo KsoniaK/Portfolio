@@ -24,12 +24,13 @@ body{
 /* header */
 .image-presentation img{
     object-fit: none;
+    width: 100%;
 }
 /* contact */
 .contact{
     position: fixed;
     text-align: end;
-    width: 3%;
+    /* width: 3%; */
     z-index: 2;
     border-radius: 0rem 0rem 13rem 13rem;
     top: 45%;
@@ -92,7 +93,7 @@ body{
 }
 h2{
     text-align: center;
-    color: #743521;
+    color: #4d698c;
     margin: 0;
     font-weight: normal;
 }
@@ -118,7 +119,7 @@ h3{
     text-decoration: none;
 }
 .texte:hover{
-    background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+    background: #f5deb3;
 }
 .animation{
     animation-duration: 3s;
@@ -205,7 +206,7 @@ h3{
         top:50%
     }
     .texte{
-        background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+        background: #f5deb3;
     }
     h2{
         font-size: 1.6rem;
@@ -237,11 +238,12 @@ h3{
         width: 75%;
         padding: 2rem;
         box-shadow: none;
-        /* height: 7vh; */
+        margin: .5rem;
         display: flex;
         align-content: center;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 5px 10px 0px #abbcc8;
     }
     @keyframes text{
         0%{

@@ -1,7 +1,7 @@
 /* desktop */
 /* main */
 main{
-    background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+    background: #f5deb3;
     overflow: hidden;
 }
 /* animation écritures */
@@ -34,7 +34,7 @@ main{
     white-space: nowrap;
     font-size: 250px;
     animation: scrollTxtBis 100s linear infinite;
-    color: wheat;
+    color: rosybrown;
 }
 @keyframes scrollTxt {
     from{
@@ -188,9 +188,9 @@ main{
 /* mediaquerie */
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 750px){
-    main{
+    /* main{
         background-color: #edeff0;
-    }
+    } */
     .t1{
         font-size: 30px;
         animation: scrollTxt 40s linear infinite;

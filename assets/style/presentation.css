@@ -1,8 +1,18 @@
 /* VERSION DESKTOP */
 /* main */
+.texte_navigation{
+  background-color: #f5deb3;
+  padding: 2rem;
+  border-radius: 0% 60%;
+}
 main{
-    background: linear-gradient(30deg, rgba(77,105,140,1) 0%, rgba(237,183,70,1) 60%, rgb(199, 128, 62) 100%);
+    background: #f5deb3;
     overflow: hidden;
+}
+.contact{
+  background-color: #f5deb3;
+  padding: 4rem;
+  border-radius: 60% 0%;
 }
 .texte-presentation{
     width: 43%;
@@ -12,7 +22,7 @@ main{
     text-align: center;
 }
 .texte-presentation p{
-    color: white;
+    color: black;
 }
 #page-presentation{
     height: 96vh;
@@ -41,9 +51,6 @@ main{
 /* mediaquerie */
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 750px){
-    main{
-        background-color: #edeff0;
-    }
     .contact{
         padding: 2rem;
         display: flex;
