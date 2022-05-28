@@ -1,4 +1,9 @@
 /* desktop */
+/* header */
+.contact{  
+    border-radius: 60% 0%;
+    background-color: #f5deb3;
+}
 /* main */
 main{
     background: #f5deb3;
