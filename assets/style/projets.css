@@ -1,9 +1,6 @@
 /* desktop */
 /* header */
-.contact{  
-    border-radius: 60% 0%;
-    background-color: #f5deb3;
-}
+/* nav */
 .navigation{
     position: fixed;
     top: 43%;
@@ -30,6 +27,11 @@
 }
 #navbar{
     display: none;
+}
+/* contact */
+.contact{  
+    border-radius: 60% 0%;
+    background-color: #f5deb3;
 }
 /* main */
 main{
@@ -68,6 +70,7 @@ main{
     animation: scrollTxtBis 100s linear infinite;
     color: rosybrown;
 }
+/* animation écritures */
 @keyframes scrollTxt {
     from{
         transform: translate(0,0)
@@ -84,31 +87,10 @@ main{
         transform: translate(0, 0);
     }
 }
-/* animation carousel projets */
+/* carousel projets */
 .container-projets, .vslide{
     width: 100%;
     height: 100vh;
-}
-.container-projets{
-    overflow: hidden;
-    background-color: transparent
-}
-.vmove{
-    position: relative;
-    bottom: 0;
-    animation: slidev linear 10s infinite;
-}
-.vmove:hover{
-    animation-play-state: paused;
-}
-@keyframes slidev {
-    0%{bottom: 0%}
-    30%{bottom: 0%}
-    33%{bottom: 100%}
-    63%{bottom: 100%}
-    66%{bottom: 200%}
-    97%{bottom: 200%}
-    100%{bottom: 0%}
 }
 .container-projets{
     justify-content: end;
@@ -117,6 +99,8 @@ main{
     width: 45%;
     position: relative;
     left: 47%;
+    overflow: hidden;
+    background-color: transparent
 }
 .container-projets div{
     position: relative;
@@ -134,6 +118,24 @@ main{
     border-radius: 10rem 0rem 10rem 0rem;
     background-color: transparent;
 }
+.vmove{
+    position: relative;
+    bottom: 0;
+    animation: slidev linear 10s infinite;
+}
+.vmove:hover{
+    animation-play-state: paused;
+}
+/* animation carousel projets */
+@keyframes slidev {
+    0%{bottom: 0%}
+    30%{bottom: 0%}
+    33%{bottom: 100%}
+    63%{bottom: 100%}
+    66%{bottom: 200%}
+    97%{bottom: 200%}
+    100%{bottom: 0%}
+}
 .snip1482 {
     position: relative;
     margin: 10px 20px;
@@ -150,6 +152,7 @@ main{
     border-radius: 10rem 0rem 10rem 0rem;
     animation: fadeIn 5s;
 }
+/* apparition div projets */
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
@@ -229,9 +232,6 @@ main{
     .texte_navigation{
         display: none;
     }
-    .menu{
-        width: 10%;
-    }
     #navbar{
         z-index: 2;
         background-color: #f5deb3!important;
@@ -240,6 +240,18 @@ main{
         height: 6rem;
         list-style: none;
         top: 1%;
+    }
+    .nav-link {
+        padding-top: 1rem;
+        justify-content: center;
+        display: block;
+        padding: .5rem 1rem;
+    }
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .menu{
+        width: 10%;
     }
     .dropdown-menu{
         width: 100%;
@@ -255,18 +267,6 @@ main{
         background-color: transparent;
         cursor: pointer;
     }
-    .menu{
-        width: 10%;
-    }
-    .nav-link {
-        padding-top: 1rem;
-        justify-content: center;
-        display: block;
-        padding: .5rem 1rem;
-    }
-    .dropdown-toggle::after {
-        display: none;
-    }
     .contact{
         top: 50px;
         padding: 1rem;
@@ -280,6 +280,19 @@ main{
         height: 40px;
       }
     /* main */
+    .animation-texte{
+        display: none;
+    }
+    .container-texte {
+        right: 51%;
+        top: 33%;
+        overflow: initial;
+    }
+    .container-texte-bis {
+        right: 44%;
+        top: 33%;
+        overflow: initial;
+      }
     .t1{
         font-size: 30px;
         animation: scrollTxt 40s linear infinite;
@@ -288,9 +301,21 @@ main{
         font-size: 30px;
         animation: scrollTxtBis 40s linear infinite;
     }
-    .container-projets, vslide{
+    .container-projets {
+        justify-content: center;
+        left: 0;
+    }
+    .container-projets div{
+        width: 70%;
+        top: 14%;
+    }
+    .container-projets, .vslide{
         width: 100%;
         height: auto;
+    }
+    .vmove{
+        top: 10%;
+        animation: paused;
     }
     .snip1482 {
         margin: 10px 0px;
@@ -305,31 +330,4 @@ main{
         top: 74%;
         left: 5px;
       }
-    .vmove{
-        top: 10%;
-    }
-    .container-projets {
-        justify-content: center;
-        left: 0;
-    }
-    .container-projets div{
-        width: 70%;
-        top: 14%;
-    }
-    .animation-texte{
-        display: none;
-    }
-    .container-texte {
-        right: 51%;
-        top: 33%;
-        overflow: initial;
-    }
-    .container-texte-bis {
-        right: 44%;
-        top: 33%;
-        overflow: initial;
-      }
-      .vmove{
-        animation: paused;
-    }
 }

@@ -1,10 +1,16 @@
 /* VERSION DESKTOP */
 /* header */
+/* nav */
 .navigation{
   position: fixed;
   top: 43%;
   left: 2%;
   z-index: 2;
+}
+.texte_navigation{
+  background-color: #f5deb3;
+  padding: 2rem;
+  border-radius: 0% 60%;
 }
 .texte_navigation ul{
   display: block;
@@ -27,20 +33,20 @@
 #navbar{
   display: none;
 }
+/* contact */
 .contact{
   background-color: #f5deb3;
   padding: 4rem;
   border-radius: 60% 0%;
 }
 /* main */
-.texte_navigation{
-  background-color: #f5deb3;
-  padding: 2rem;
-  border-radius: 0% 60%;
-}
 main{
     background: #f5deb3;
     overflow: hidden;
+}
+/* présentation */
+#page-presentation{
+  height: 96vh;
 }
 .texte-presentation{
     width: 43%;
@@ -49,32 +55,30 @@ main{
     left: 29%;
     text-align: center;
 }
+#page-presentation img{
+  width: 100%;
+}
+/* animation presentation */
+.animation-presentation img{
+  animation-duration: 1.5s;
+  animation-name: slideinpresentation;
+  animation-iteration-count: 1;
+}
+@keyframes slideinpresentation {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
 .texte-presentation p{
     color: black;
-}
-#page-presentation{
-    height: 96vh;
 }
 .texte-presentation h2{
   color: #4d698c;
   padding: 2rem;
 }
-#page-presentation img{
-    width: 100%;
-}
-.animation-presentation img{
-    animation-duration: 1.5s;
-    animation-name: slideinpresentation;
-    animation-iteration-count: 1;
-}
-@keyframes slideinpresentation {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 0%;
-    }
-  }
 
 /* mediaquerie */
 /* mobile */
@@ -83,15 +87,13 @@ main{
   header{
     background-color:#edeff0;
   }
+  /* nav */
   .navigation{
     top: 0;
     left: 0;
 }
 .texte_navigation{
     display: none;
-}
-.menu{
-    width: 10%;
 }
 #navbar{
     z-index: 2;
@@ -101,6 +103,18 @@ main{
     height: 6rem;
     list-style: none;
     top: 1%;
+}
+.nav-link {
+  padding-top: 1rem;
+  justify-content: center;
+  display: block;
+  padding: .5rem 1rem;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.menu{
+  width: 10%;
 }
 .dropdown-menu{
     width: 100%;
@@ -116,18 +130,7 @@ main{
     background-color: transparent;
     cursor: pointer;
 }
-.menu{
-    width: 10%;
-}
-.nav-link {
-    padding-top: 1rem;
-    justify-content: center;
-    display: block;
-    padding: .5rem 1rem;
-}
-.dropdown-toggle::after {
-    display: none;
-}
+/* contact */
 .contact{
     top: 50px;
     padding: 1rem;
@@ -135,21 +138,25 @@ main{
     justify-content: center;
     position: initial!important;
     background-color: #f5deb3;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    right: 0;
 }
 .contact img {
     width: 40px;
     height: 40px;
-  }
-    .contact{
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-        right: 0;
-    }
+}
+/* main */
+/* présentation */
+#page-presentation img{
+  display: none;
+}
+/* animation présentation */
     .texte-presentation{
         padding: 3rem;
         width: 90%;
@@ -169,7 +176,5 @@ main{
           margin-left: 0%;
         }
       }
-      #page-presentation img{
-        display: none;
-      }
+
 }

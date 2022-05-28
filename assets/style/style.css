@@ -8,7 +8,6 @@
     font-family: vogue;
     src: url(../fonts/vogue/Vogue.ttf)
 }
-
 *{
     box-sizing: border-box;
 }
@@ -21,11 +20,13 @@ body{
     margin: 0;
     font-family: "jost", serif;
 }
-/* header */
-.image-presentation img{
-    object-fit: none;
-    width: 100%;
+h2{
+    text-align: center;
+    color: #4d698c;
+    margin: 0;
+    font-weight: normal;
 }
+/* header */
 /* contact */
 .contact{
     position: fixed;
@@ -46,6 +47,12 @@ body{
     transform: rotate(360deg);
 }
 /* main */
+/* image présentation */
+.image-presentation img{
+    object-fit: none;
+    width: 100%;
+}
+/* h1 */
 .container{
     text-align: center;
     position: absolute;
@@ -54,8 +61,8 @@ body{
     transform: translate(-48%, -73%);
     width: 100%;
 }
-.container span,
-.container h1{
+.container h1,
+.container span{
     color: #743521;
     text-transform: uppercase;
     display: block;
@@ -75,6 +82,7 @@ body{
     font-size: 25px;
     font-weight: bold;
 }
+/* animation h1 */
 @keyframes text{
     0%{
         color: white;
@@ -89,35 +97,14 @@ body{
         margin-bottom: -20px;
     }
 }
-h2{
-    text-align: center;
-    color: #4d698c;
-    margin: 0;
-    font-weight: normal;
-}
-h3{
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 4rem;
-}
+/* nav */
 #parcours{
     display: flex;
     justify-content: space-around;
     padding: 2rem;
     flex-wrap: wrap;
 }
-.texte{
-    border-radius: 5rem 0rem 5rem 0rem;
-    width: 60%;
-    padding: 2rem;
-    box-shadow: 0px 5px 10px 0px #abbcc8;
-}
-.texte a{
-    text-decoration: none;
-}
-.texte:hover{
-    background: #f5deb3;
-}
+/* animation nav / class créée dynamiquement*/
 .animation{
     animation-duration: 3s;
     animation-name: slidein;
@@ -134,15 +121,18 @@ h3{
       width: 100%;
     }
 }
-/* copyright */
-.copyright p{
-    text-align: center;
-    color: black;
+.texte{
+    border-radius: 5rem 0rem 5rem 0rem;
+    width: 60%;
+    padding: 2rem;
+    box-shadow: 0px 5px 10px 0px #abbcc8;
 }
-.copyright{
-    text-align: center;
+.texte a{
+    text-decoration: none;
 }
-
+.texte:hover{
+    background: #f5deb3;
+}
 /* ancre */
 #arrow_up{
     position: fixed;
@@ -158,6 +148,14 @@ h3{
 #arrow_up:hover{
     opacity: 1;    
 }
+/* copyright */
+.copyright{
+    text-align: center;
+}
+.copyright p{
+    text-align: center;
+    color: black;
+}
 
 /* mediaquerie */
 /* mobile */
@@ -169,10 +167,15 @@ h3{
     body{
         width: 100%;
     }
+    h2{
+        font-size: 1.6rem;
+        color: #353f51;
+    }
     /* header */
     header{
         width: 100%;
     }
+    /* contact */
     .contact{
         padding: 2rem;
         display: flex;
@@ -192,19 +195,17 @@ h3{
         height: 40px;
     }
     /* main */
-    .container{
-        top:50%
-    }
-    h2{
-        font-size: 1.6rem;
-        color: #353f51;
-    }
+    /* image accueil */
     .image-presentation img{
         height: 65vh;
         position: relative;
         top: 15%;
         width: 100%;
         object-fit: cover;
+    }
+    /* h1 */
+    .container{
+        top:50%
     }
     .container h1{
         font-size: 26px;
@@ -215,23 +216,9 @@ h3{
         font-size: 22px;
         color: #743521;
     }
+    /* animation h1 */
     .animation{
         animation: paused;
-    }
-    .parcours{
-        display: flex;
-    }
-    .texte{
-        background: #f5deb3;
-        width: 75%;
-        padding: 2rem;
-        box-shadow: none;
-        margin: .5rem;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 5px 10px 0px #abbcc8;
     }
     @keyframes text{
         0%{
@@ -247,12 +234,24 @@ h3{
             margin-bottom: -20px;
         }
     }
-    .parcours{
-        padding: 0;
+    /* nav */
+    .texte{
+        background: #f5deb3;
+        width: 75%;
+        padding: 2rem;
+        box-shadow: none;
+        margin: .5rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 10px 0px #abbcc8;
     }
+    /* ancre */
     #arrow_up{
         display: none; 
     }
+    /* copyright */
     .copyright{
         padding: 1rem;
     }
