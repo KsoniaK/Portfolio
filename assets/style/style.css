@@ -29,6 +29,7 @@ h2{
 /* header */
 /* contact */
 .contact{
+    background-color: white;
     position: fixed;
     text-align: end;
     z-index: 2;
@@ -126,12 +127,13 @@ h2{
     width: 60%;
     padding: 2rem;
     box-shadow: 0px 5px 10px 0px #abbcc8;
+    margin: 1rem;
 }
 .texte a{
     text-decoration: none;
 }
 .texte:hover{
-    background: #f5deb3;
+    background: #fae5ad;
 }
 /* ancre */
 #arrow_up{
@@ -236,7 +238,7 @@ h2{
     }
     /* nav */
     .texte{
-        background: #f5deb3;
+        /* background: #faefdb; */
         width: 75%;
         padding: 2rem;
         box-shadow: none;
