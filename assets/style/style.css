@@ -29,7 +29,7 @@ h2{
 /* header */
 /* contact */
 .contact{
-    background-color: white;
+    /* background-color: white; */
     position: fixed;
     text-align: end;
     z-index: 2;
