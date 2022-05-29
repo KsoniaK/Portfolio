@@ -300,6 +300,7 @@ main{
         animation: scrollTxtBis 40s linear infinite;
     }
     .container-projets {
+        background-color: #fef6db;
         justify-content: center;
         left: 0;
     }
@@ -308,7 +309,6 @@ main{
         top: 14%;
     }
     .container-projets, .vslide{
-        background-color: #fef6db;
         width: 100%;
         height: auto;
     }
